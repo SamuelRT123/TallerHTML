@@ -8,46 +8,63 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div id="banner">
-        <div class="icon">
-        <img src="images/menu.svg">
-            <div class="menuText">
-                <h1 id="menuTitle">Menú</h1>
-                <div id="menup">
-                <a href="hobbies.html">Hobbies</a><br>
-                <a href="#objetivos.html">Objetivos</a><br>
-                <a href="#habilidades.html">Habilidades</a><br>
-                <a href="#comentarios.html">Comentarios</a>
-                </div>
-            </div>
-            <div class="background"></div>
-        </div>
-    </div>
-    <div id="container"> 
-        <div id="left-half">
-            <h1>Samuel Rodríguez Torres</h1>
-            <div class="circular-image">
-                <img src="./images/empresario.jpg" alt="Descripción de la imagen">
-            </div>
-            <h2>Ingeniero en progreso</h2>
-            <p>Soy un ingeniero de sistemas que pasa más tiempo depurando código que socializando. Mi superpoder es convertir café en software y usar a ChatGPT como mi profesor complementario.            </p>
-            <div class="ImagenesJuntas">
-                <a href="https://leetcode.com/u/SamRT/"> <img src="./images/leetcode.svg" alt="Leetcode">  </a>
-                <a href="https://leetcode.com/u/SamRT/"> <img src="./images/ig.png" alt="Instragram">  </a>
-                <a href="https://github.com/SamuelRT123"> <img src="./images/github.png" alt="Github ">  </a>
-                <a href="https://leetcode.com/u/SamRT/"> <img src="./images/ubicacion.png" alt="Ubicacion">  </a>
-                <a href="https://leetcode.com/u/SamRT/"> <img src="./images/whatsapp.png" alt="Whatsapp">  </a>
-            </div>
-        </div>
-        <div id="right-half">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, assumenda. <br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, accusantium officia.
-                <br><br><br><br> Est sed vel, esse illum consequuntur excepturi exercitationem laborum iste. Illum, incidunt mollitia labore commodi architecto magnam cum ipsa. Odit ad aut non dolore adipisci, ab voluptas sunt iure unde, quisquam nulla alias id ut magnam nisi culpa consequatur quaerat explicabo, labore quidem doloremque cum natus dolor. Dolorum ipsam ab esse excepturi possimus nulla maiores? Architecto quis tenetur aliquam hic ipsa doloremque sapiente debitis delectus, odio dolor maxime voluptates repellat a nemo tempora alias aperiam commodi quia corrupti ab mollitia dignissimos vero obcaecati eveniet. Voluptatem alias deserunt sed quod nostrum. Repellendus, saepe molestias necessitatibus possimus labore nobis commodi nemo provident placeat, ipsum quae fuga eos quaerat corrupti sit! Repudiandae in aspernatur, ipsam sit quod odit quibusdam. Eum hic cum error dolorem in, distinctio cupiditate illo repudiandae enim sit ut incidunt quo vitae unde et, veniam ipsa tempore fugiat odit magni adipisci at beatae.</p>
-        </div>
-    </div>
+  <div class="mouse"></div>
 
-    <footer>
-        <h3>Samuel Rodriguez</h3>
-    </footer>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="habilidades.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sugerencias.html">Sugerencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+      
+    <div id="container"> 
+        <div id="col-4">
+            <p>"Cualquier cosa que hagas en esta vida, no es legendaria a menos que 
+                tus amigos estén allí para verlo” <b>— Barney Stinson.</b> <br><br>
+                "Cualquiera puede escribir código que una computadora entienda. 
+                Los buenos programadores escriben código que los humanos entiendan." <b>— Kent Beck </b></p>
+                
+            <img src="./images/autor1.png" alt="" class="Imgautor1">
+            
+        </div>
+        <div id="col-8">
+            <h1>Samuel Rodríguez</h1>
+            <div id="imgAutor2">
+                <img src="./images/autor2.png" alt=""></div>
+            <h3>Ingeniero en progreso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe eaque vitae
+                 repellendus ratione ab culpa error, laboriosam obcaecati! Similique esse consequuntur,
+                  suscipit corrupti nulla amet tempora non nemo porro.</p>
+                  
+                
+        </div>
+        <div id="col-12">
+            <div class="social_media" id="social">
+                <a href="https://api.whatsapp.com/send?phone=3053210257" target="_blank"> <img src="./images/whatsapp.png" alt="Whatsapp">  </a>
+                <a href="https://www.instagram.com/sam_rt860/profilecard/?igsh=dXhwenlmdmZ5Znc1" target="_blank"> <img src="./images/ig.png" alt="Instragram">  </a>
+                <a href="https://leetcode.com/u/SamRT/" target="_blank"> <img src="./images/leetcode.svg" alt="Leetcode">  </a>
+                <a href="https://github.com/SamuelRT123" target="_blank"> <img src="./images/github.png" alt="Github ">  </a>
+            </div>
+        </div>
+    </div>
+    <script src="mouse.js"></script>
 </body>
 </html>
