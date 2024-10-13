@@ -15,10 +15,121 @@
   
 }
 body{
-  background-image: url(./images/fondoHobbies.jpg);
+
+  background-image: url(./images/F2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.form{
- width: 40%;
- margin: auto;
- padding-top: 4%;
+h1{
+  padding-top: 2%;
+  text-align: center;
+  font-size: 5vw;
+  color: wheat;
 }
+hr{
+  color:wheat;
+  margin:auto;
+  width: 80%;
+  border: 2px solid wheat;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+}
+
+.texto {
+  flex-basis: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#blender {
+  font-size: 43px;;
+  text-align: center;
+  color: wheat;
+  border:6px solid white;
+  background-color: rgba(55, 55, 55, 0.5);
+  padding: 12%;
+  clip-path: polygon(16% 37%, 0 0, 53% 15%, 100% 0, 83% 98%, 53% 99%, 0 60%);
+  animation: animarClipPath 6s infinite ease-in-out;
+}
+
+.texto p {
+  color: wheat;
+  margin-top: 20px;
+}
+
+@keyframes animarClipPath {
+  0% {
+    clip-path: polygon(16% 37%, 0 0, 53% 15%, 100% 0, 83% 98%, 53% 99%, 0 60%);
+  }
+  25% {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  }
+  70% {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  }
+  100% {
+    clip-path: polygon(16% 37%, 0 0, 53% 15%, 100% 0, 83% 98%, 53% 99%, 0 60%);
+  }
+}
+.custom-carousel {
+  flex-basis: 50%;
+  padding: 10%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  height: fit-content;
+}
+
+.custom-carousel-img {
+  border: 2px solid white;
+  color: wheat;
+}
+.d-md-block{
+  position: absolute;
+  bottom:0;
+  border: 2px solid wheat;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+  height: fit-content;
+  margin:auto
+}
+
+.carousel-control-prev-icon{
+  margin-left: 70%;
+}
+ 
+.carousel-control-next-icon{
+  margin-right: 70%;
+} 
+.carousel-indicators{
+  position: absolute;
+  bottom:60px;
+  height: 30px;
+}
+
+/*-------Música-------*/
+
