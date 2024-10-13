@@ -83,6 +83,7 @@ body::-webkit-scrollbar-track {
 #col-4{
   width:30vw;
   display: table;
+  padding-right: 3%;
 }
 #col-4 .Imgautor1{
   position: fixed;
@@ -91,11 +92,16 @@ body::-webkit-scrollbar-track {
   width:20%;
   filter: brightness(0.3);
 }
-#col-4 p{
+#col-4 #citas{
   display: table-cell;
   text-align: justify;
   vertical-align: middle;
   padding-left: 16%;
+}
+#citas p{
+  padding:4%;
+  border-left: 3px dashed black;
+  border-right: 3px dashed black;
 }
 
 
@@ -105,6 +111,9 @@ body::-webkit-scrollbar-track {
   width:45vw;
   text-align: center;
   margin-top:2%;
+}
+#col-8 hr{
+  border:2px solid black;
 }
 #imgAutor2 {
   width: 70%;
@@ -123,6 +132,7 @@ body::-webkit-scrollbar-track {
 
 #col-12{
   width:24vw;
+
 }
 
 #col-12 .social_media{
