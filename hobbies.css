@@ -203,3 +203,120 @@ h3{
   margin:3% auto 3% auto;
   border-radius: 30%;
 }
+
+/* ---------Deportes---------*/
+.Deportes{
+  height: fit-content;
+  display:inline-block;
+  align-items: center;
+  width: 100%;
+  background-image: url(./images/fondoHobbies.jpg);
+}
+.Deportes h5{
+  text-align: center;
+  font-size: 40px;
+  margin:3%;
+}
+.Deportes hr{
+  border: 5px solid black;
+  width: 70%;
+  margin-bottom:3% ;
+  margin-top:-2% ;
+}
+.wrap {
+  width: 80%;
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 4px solid red;
+  border: 5px solid black;
+}
+
+.tarjeta-wrap {
+  flex: 1 1 300px;
+}
+
+.tarjeta {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .7s ease;
+}
+
+.adelante, .atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.adelante {
+  width: 100%;
+}
+
+.atras {
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: "open sans";
+  background: black;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.wrap .tarjeta-wrap:nth-child(4), 
+.wrap .tarjeta-wrap:nth-child(5) {
+  flex: 1 1 300px;
+}
+
+.card1{
+	background-image: url(./Deportes/gimnasio.jpeg);
+	background-size: cover;
+}
+
+.card2{
+	background-image: url(./Deportes/golf.jpeg);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(./Deportes/running.jpeg);
+	background-size: cover;
+  background-position: center;
+}
+.card4{
+	background-image: url(./Deportes/tennis.jpeg);
+	background-size: cover;
+  background-position:top;
+}
+.card5{
+	background-image: url(./Deportes/ultimate.jpeg);
+	background-size: cover;
+}
+
+/* -----------foooter-------------*/
+footer{
+  background-color: black;
+  display: table;
+  width: 100%;
+  height: fit-content;
+  border: 3px solid black;
+}
+footer h1{
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle; 
+  font-size: 32px;
+}
