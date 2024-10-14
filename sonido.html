@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles de Audio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .mouse {
+            position: absolute;
+            width: 66px; /* Ajusta el tamaño del cursor */
+            height: 66px; /* Ajusta el tamaño del cursor */
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 2px solid #000;
+            border-radius: 50%;
+            pointer-events: none; /* Evita que el cursor personalice eventos */
+            z-index: 1000; /* Asegúrate de que está por encima de otros elementos */
+        }
+    </style>
+</head>
+<body>
+
+<div class="mouse"></div>
+
+<div class="container mt-5">
+    <h1>Controles de Audio</h1>
+    <audio id="sonido1" src="sonido1.mp3"></audio>
+    <audio id="sonido2" src="sonido2.mp3"></audio>
+    <audio id="sonido3" src="sonido3.mp3"></audio>
+
+    <div class="mb-3">
+        <button id="play-7years" class="btn btn-primary">Reproducir 7 Years</button>
+        <button id="pause-7years" class="btn btn-secondary">Pausar 7 Years</button>
+        <button id="rewind-7years" class="btn btn-warning">Retroceder 7 Years</button>
+    </div>
+
+    <div class="mb-3">
+        <button id="play-InsideOut" class="btn btn-primary">Reproducir Inside Out</button>
+        <button id="pause-InsideOut" class="btn btn-secondary">Pausar Inside Out</button>
+        <button id="rewind-InsideOut" class="btn btn-warning">Retroceder Inside Out</button>
+    </div>
+
+    <div class="mb-3">
+        <button id="play-OneLastTime" class="btn btn-primary">Reproducir One Last Time</button>
+        <button id="pause-OneLastTime" class="btn btn-secondary">Pausar One Last Time</button>
+        <button id="rewind-OneLastTime" class="btn btn-warning">Retroceder One Last Time</button>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    const cursor = document.querySelector('.mouse');
+    document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: " + (e.pageY - 33) + "px; left: " + (e.pageX - 33) + "px;");
+    });
+
+    $(document).ready(function () {
+        $('#exampleModal').modal('show');
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var audio1 = document.getElementById("sonido1");
+        var audio2 = document.getElementById("sonido2");
+        var audio3 = document.getElementById("sonido3");
+
+        // Botones para el primer audio
+        document.getElementById("play-7years").addEventListener("click", function () {
+            audio1.play();
+        });
+        document.getElementById("pause-7years").addEventListener("click", function () {
+            audio1.pause();
+        });
+        document.getElementById("rewind-7years").addEventListener("click", function () {
+            audio1.currentTime = Math.max(0, audio1.currentTime - 10); // Retrocede 10 segundos
+        });
+
+        // Botones para el segundo audio
+        document.getElementById("play-InsideOut").addEventListener("click", function () {
+            audio2.play();
+        });
+        document.getElementById("pause-InsideOut").addEventListener("click", function () {
+            audio2.pause();
+        });
+        document.getElementById("rewind-InsideOut").addEventListener("click", function () {
+            audio2.currentTime = Math.max(0, audio2.currentTime - 10); // Retrocede 10 segundos
+        });
+
+        // Botones para el tercer audio
+        document.getElementById("play-OneLastTime").addEventListener("click", function () {
+            audio3.play();
+        });
+        document.getElementById("pause-OneLastTime").addEventListener("click", function () {
+            audio3.pause();
+        });
+        document.getElementById("rewind-OneLastTime").addEventListener("click", function () {
+            audio3.currentTime = Math.max(0, audio3.currentTime - 10); // Retrocede 10 segundos
+        });
+    });
+</script>
+
+</body>
+</html>

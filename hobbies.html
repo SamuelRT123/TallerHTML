@@ -37,15 +37,7 @@
         <h2 id="blender">Modelado en 3D</h2>
     <p>Más diseños en @3dart_rt</p></div>
         <div id="carouselExampleCaptions" class="carousel slide custom-carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-            </div>
+            
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./3d/Ajedrez2.png" class="d-block w-100 custom-carousel-img">
@@ -103,20 +95,52 @@
     </section>
 
     <section class="Flauta">
-        <h2>Música</h2>
-        <audio id="sonido" src=".audio/7years.mp3" autoplay></audio>
-
-        <button id="play-7years">Pista1</button>
-<audio id="sonido1" src=".audio/7years.mp3"></audio>
-<button id="play-InsideOut">Pista 2</button>
-<audio id="sonido2" src=".audio/InsideOut.mp3"></audio>
-<button id="play-OneLastTime">Pista 3</button>
-<audio id="sonido3" src=".audio/OneLastTime.mp3"></audio>
+        
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <h4>Algunos covers</h4>
+            <button type="button" class="btn btn-primary" id="play-7years">7 Years - Lukas Graham</button>
+            <button type="button" class="btn btn-primary" id="play-InsideOut">InsideOut</button>
+            <button type="button" class="btn btn-primary" id="play-OneLastTime">One Last Time - Ariana Grande</button>
+          </div>
+        <div class="col-6">
+            <h2>Música</h2>
+            <h3>Flautista aficionado</h3>
+            <img src="./images/Flautista.png" alt="">
+        </div>
+        
+        <audio id="sonido1" src="./audio/7years.mp3"></audio>
+        <audio id="sonido2" src="./audio/InsideOut.mp3"></audio>
+        <audio id="sonido3" src="./audio/OneLastTime.mp3"></audio>
 
     </section>
     <section class="Deportes">
-        <h2>Deportes</h2>
+        <h5>Deportes</h5>
     </section>
 
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var audio1 = document.getElementById("sonido1");
+        var button1 = document.getElementById("play-7years");
+        
+        var audio2 = document.getElementById("sonido2");
+        var button2 = document.getElementById("play-InsideOut");
+        
+        var audio3 = document.getElementById("sonido3");
+        var button3 = document.getElementById("play-OneLastTime");
+        
+        button1.addEventListener("click", function() {
+          audio1.play();
+        });
+        
+        button2.addEventListener("click", function() {
+          audio2.play();
+        });
+        
+        button3.addEventListener("click", function() {
+          audio3.play();
+        });
+      });
+    </script>
 </body>
 </html>
